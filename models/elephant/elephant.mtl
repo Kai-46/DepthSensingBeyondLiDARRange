@@ -1,0 +1,30 @@
+newmtl aa_blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CH_NPC_MOB_Elephant_A01_D_GRN.png
+bump CH_NPC_MOB_Elephant_A01_N_GRN.tga -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks CH_NPC_MOB_Elephant_A01_SP_GRN.png
+newmtl blink_L_aa_blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CH_NPC_MOB_Elephant_A01_D_GRN.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks CH_NPC_MOB_Elephant_A01_SP_GRN.png
+Ns 0.06
+newmtl blink_R_aa_blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CH_NPC_MOB_Elephant_A01_D_GRN.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks CH_NPC_MOB_Elephant_A01_SP_GRN.png
+Ns 0.06
