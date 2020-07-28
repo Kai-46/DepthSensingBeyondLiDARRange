@@ -339,16 +339,16 @@ color, depth = r.render(scene, flags=flags)
 r.delete()
 scene.remove_node(cam_node)     # remove camera from the scene
 
-imageio.imwrite(os.path.join(out_dir, 'color.png'), color)
+imageio.imwrite(os.path.join(out_dir, 'color_left.png'), color)
 
-h5f = h5py.File(os.path.join(out_dir, 'depth.h5'), 'w')
+h5f = h5py.File(os.path.join(out_dir, 'depth_left.h5'), 'w')
 h5f.create_dataset('data', data=depth)
 h5f.close()
 
 min_val, max_val = np.percentile(depth[depth>0], (1, 99))
 depth_tmp = np.clip(depth, min_val, max_val)
 depth_tmp = (depth_tmp - min_val) / (max_val - min_val)
-imageio.imwrite(os.path.join(out_dir, 'depth.png'), np.uint8(depth_tmp*255.0))
+imageio.imwrite(os.path.join(out_dir, 'depth_left.png'), np.uint8(depth_tmp*255.0))
 
 mean_depth = np.mean(depth[depth > 0])
 
