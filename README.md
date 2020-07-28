@@ -9,7 +9,7 @@
     python render_elephant_intrinsic_camera.py
 ```
 
-## To understand sfm ambiguity
+## To play around with bas-relief ambiguity
 ```matlab
     matlab theory_sfm_ambiguity.m
 ```
