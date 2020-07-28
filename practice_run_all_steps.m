@@ -355,10 +355,10 @@ nan_mask = isnan(esti_depth) | invalid_mask;
 
 mask_tmp = nan_mask;
 esti_depth_tmp = esti_depth;
-clip_min = 200;
-clip_max = 260;
-esti_depth_tmp(esti_depth_tmp < clip_min) = clip_min;
-esti_depth_tmp(esti_depth_tmp > clip_max) = clip_max;
+%clip_min = 200;
+%clip_max = 260;
+%esti_depth_tmp(esti_depth_tmp < clip_min) = clip_min;
+%esti_depth_tmp(esti_depth_tmp > clip_max) = clip_max;
 imagesc(esti_depth_tmp,'AlphaData', ~nan_mask);
 title('Estimated depth');
 set(gcf,'color','w');
